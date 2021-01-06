@@ -10,7 +10,7 @@ Bitte nicht von der Länge dieser Anleitung abschrecken lassen. Hier werden noch
 
 Im Prinzip besteht **jede** Installation aus zwei Schritten
 * Installation eines Betriebssystems
-* Installation von node.js und ioBroker über ```curl -sLf https://iobroker.net/install.sh | bash -```
+* Installation von node.js und ioBroker über `curl -sLf https://iobroker.net/install.sh | bash -`
 
 Die weitere Verfahrensweise ist anschließend überall gleich.
 
