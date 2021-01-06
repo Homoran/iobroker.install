@@ -8,7 +8,7 @@ Die Installation von ioBroker unter Linux ist auch für jeden Einsteiger zu scha
 
 Bitte nicht von der Länge dieser Anleitung abschrecken lassen. Hier werden noch mehrere verschiedene Optionen beschrieben.
 
-Im Prinzip besteht **jede** Installation aus zwei Schritten
+Im Prinzip besteht **jede** Installation nur aus zwei Schritten
 * Installation eines Betriebssystems
 * Installation von node.js und ioBroker über `curl -sLf https://iobroker.net/install.sh | bash -`
 
@@ -43,12 +43,14 @@ Nach kurzer Zeit ist der SBC im Netzwerk erreichbar. Im Router nach der IP-Adres
 
 #### Einrichtung und Aktualisierung des Systems
 ##### User anlegen
-Sollte in dem System der Zugang mit *root* stattfinden und noch kein normaler User angelegt sein, muss dieser angelegt werden mit ```adduser UserName``` wobei UserName durch den gewünschen Usernamen ersetzt werden muss.
+Sollte in dem System der Zugang mit *root* stattfinden und noch kein normaler User angelegt sein, muss dieser angelegt werden mit `adduser UserName` wobei UserName durch den gewünschen Usernamen ersetzt werden muss.
 
-Anschließend das Passwort vergeben, wiederholen und bestätigen, dann mit ```exit``` ausloggen und eine neue Verbindung als User aufbauen.
+Anschließend das Passwort vergeben, wiederholen und bestätigen, dann mit `exit` ausloggen und eine neue Verbindung als User aufbauen.
 
 ##### Aktualisierung des Systems
-Auch wenn das Betriebssystem neu heruntergeladen wurde sollte es auf Aktualisierung überprüft werden. Dies geschieht mit ```sudo apt update && sudo apt upgrade``` Anschließend noch bestätigen.
+Auch wenn das Betriebssystem neu heruntergeladen wurde sollte es auf Aktualisierung überprüft werden. Dies geschieht mit `sudo apt update && sudo apt upgrade`
+
+Anschließend noch bestätigen.
 
 Nach einiger Zeit ist das System auf dem neuesten Stand.
 
@@ -57,8 +59,8 @@ Wichtige Einstellungen wie z.B.
 * Zeitzone
 * Sprache
 * Servername
-müssen über dem Aufruf ```sudo raspi-config``` bzw. ```sudo armbian-config``` eingestellt werden.
-Danach nochmals rebooten mit ```sudo reboot```
+müssen über dem Aufruf `sudo raspi-config` bzw. `sudo armbian-config` eingestellt werden.
+Danach nochmals rebooten mit `sudo reboot`
 
 ### Debian-PC
 * Das Betriebssystem wird auf einen Bootfähigen USB-Stick geschrieben.
@@ -72,7 +74,7 @@ Auch hier sollte keine grafische Oberfläche installiert werden.
 
 ## Installation von node.js und ioBroker
 
-ioBroker wird mit dem Befehl ```curl -sLf https://iobroker.net/install.sh | bash -``` installiert
+ioBroker wird mit dem Befehl `curl -sLf https://iobroker.net/install.sh | bash - ` installiert
 
 Auf einem neuen System, auf dem sich noch kein node.js befindet wird dieses in der jeweils aktuell empfohlenen Version mit installiert.
 
