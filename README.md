@@ -17,7 +17,7 @@ Die weitere Verfahrensweise ist anschließend überall gleich.
 ### benötigte Software/Hardware
 Für die Installation und die spätere Administrierung des Systems werden noch folgende Komponenten benötigt:
 * SD-Card Reader
-* Schreibprogramm für SD-Karten (z.B. Balena etcher)
+* Schreibprogramm für SD-Karten (z.B. Balena etcher oder https://rufus.ie/)
 * Terminalprogramm für SSH-Zugriff (z.B. puTTY)
 
 ## Betriebssysteme
@@ -32,6 +32,8 @@ Empfohlene Betriebssysteme sind:
 
 #### Vorbereitung
 Das gewünschte Betriebssystem wird in der zur Hardware passenden Version heruntergeladen und auf die SD-Karte geschrieben.
+
+(Bei Raspberry OS muss nach dem Schreiben der SD-Karte noch auf der Bootpartition eine leere Datei mit Namen `ssh` angelegt werden. Dazu unter Windows mit der rechten Maustaste in dem Laufwerk der SD mit der Bezeichnung `Boot` eine neue Textdatei anlegen und die Endung `.txt` löschen, auch wenn Windows eine Meldung bringt.)
 
 Die SD-Karte wird in den Einplatinencomputer gesteckt, der Computer mit dem Netzwerk und mit der Stromversorgung verbunden.
 
