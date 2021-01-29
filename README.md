@@ -74,6 +74,10 @@ Anschließend vom USB-Stick booten und der geführten Installation folgen.
 
 Auch hier sollte keine grafische Oberfläche installiert werden.
 
+Je nach Paket kann es sein, dass noch einige Pakete nachinstalliert werden müssen.
+
+Wenn es bei der Auführung eines Befehls eine entsprechende Fehlermeldung gibt muss das Paket über apt installiert werden: `sudo apt install paketName`, wobei paketName natürlich durch den Namen des Pakets ersetzt werden muss.
+
 ## Installation von node.js und ioBroker
 
 ioBroker wird mit dem Befehl `curl -sLf https://iobroker.net/install.sh | bash - ` installiert
